@@ -1,0 +1,6 @@
+<image class='cover' src="{{splash.img}}" style="height:{{sHeight}}px;width:{{sWidth}}px"></image>
+<view class="mask">
+  <image class='logo' src="../../images/logo.jpg"></image>
+  <text class="cover-author">@ {{splash.text}}</text>
+  <text class="app-author">Designed by Yang_huang</text>
+</view>
