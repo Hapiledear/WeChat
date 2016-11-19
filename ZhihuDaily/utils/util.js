@@ -16,6 +16,22 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
+/**
+ * 获取当前日期对象
+ * @returns {object}
+ */
+function getCurrentDate() {
+  var date = new Date();
+  return {
+    date: new Date(),
+    year: date.getFullYear(),
+    month: date.getMonth() + 1,
+    day: date.getDate(),
+    weekday: date.getDay()
+  };
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  getCurrentDate:getCurrentDate
 }
